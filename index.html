@@ -280,7 +280,7 @@
             <span style="font-family:var(--display);font-style:italic;font-size:clamp(.98rem,1.6vw,1.28rem);color:var(--ink)">Co-Intelligence of Humanities &amp; <em style="color:var(--cinnabar)">AI</em></span>
           </div>
           <div class="greet cjk r">九州大学・京都大学・고려대학교 — ようこそ、환영합니다、歡迎。</div>
-          <div class="meta r"><span>Shu-Kai Hsieh</span><span class="dot"></span><span>10-minute talk</span></div>
+          <div class="meta r"><span>Shu-Kai Hsieh</span><span class="dot"></span><span>Graduate Institute of Linguistics, National Taiwan University</span></div>
         </div>
       </div>
     </div>
@@ -593,19 +593,20 @@ slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot-na
 const dots=[...dotsWrap.children];
 
 const notes=[
- "Good morning. 九州大学、京都大学、고려대학교の先生方 — welcome to Taipei, and thank you for joining this first TRIP gathering. My title today is Humanities AI in an East Asian Context. In ten minutes I won't show a finished product but a direction — what we at NTU's College of Liberal Arts call CHAI: the Co-Intelligence of Humanities and AI. The word also means 'tea' — something East Asia has long known how to cultivate slowly, attentively, and together.",
- "We have entered an age of cheap fluency and expensive meaning. When any system can generate plausible text in any voice at almost no cost, fluency stops being scarce. What becomes scarce — and therefore precious — is meaning: interpretation, provenance, judgment, the weight of a word across centuries. These are exactly the competencies the humanities have cultivated for two thousand years. So the humanities don't merely survive AI; AI raises their value.",
- "For a while the anxious question was: will AI replace the humanist? I think that's the wrong question. The better one is: what kind of AI do the humanities want to build? Our guiding principle is simple — AI does not replace interpretation; it expands the space of interpretability. Not an oracle that ends the conversation, but a co-reader that opens it.",
- "Our first case study concerns cultural semantics across centuries. We have been studying culturally dense words such as qing, 情, and jimo, 寂寞. These words cannot be reduced to simple English glosses. Computational semantics can draw trajectories across large corpora; humanistic interpretation reads the territory.",
- "Here are the visual trajectories: 情 drifting from classical clusters of affect and affinity toward modern social meanings; 寂寞 passing through Buddhist quietude, poetic desolation, and modern loneliness.",
- "This leads to the institutional proposal: CHAI Lab — a local-first AI infrastructure. Sensitive and copyrighted corpora preserved, maintained, and explored within the university.",
- "The second layer is the agentic research team: Reader, Archivist, Critic, and Builder agents — the scholar remains the principal investigator.",
- "The first prototype is SutraLens — AI-augmented aligned reading for Buddhist texts, running on local models with data sovereignty for our cultural archives.",
- "Engineers give their agents a CLAUDE.md or AGENTS.md. We propose the humanities write theirs: CHAI.md — a living constitution refined through every encounter with a scholar and a text.",
- "CHAI.md is not merely a prompt file. It is a living constitution for a humanities-aware AI: identity, values, scholarly habits, memory, uncertainty, and governance commitments.",
- "Soon, much of our institutional life will be mediated by AI whose norms are set elsewhere. If the humanities are absent, our values won't be represented. An AI raised on CHAI.md can advocate for humanistic value inside the systems that will govern us.",
- "Three organ layers — cognitive core, symbiotic noosphere loop, and governance membrane — breathing together as an awake, human-aligned system.",
- "We can't build this alone. CHAI is conceived as an East Asian alliance — Taiwan, Kyushu, Kyoto, Korea. From parallel reading to semantic co-reading; from tools to co-intelligence. ありがとうございます。 감사합니다。 謝謝。 Thank you."
+ "Good morning, everyone — and welcome to Taipei. Really glad to have you here. Today I want to share a direction we're excited about at NTU's College of Liberal Arts. We call it CHAI — Co-Intelligence of Humanities and AI. Ten minutes, no finished product, but a real vision.",
+ "Here's the paradox: generating fluent text is basically free now. Which means fluency is cheap — and meaning is the expensive thing. Interpretation, provenance, judgment, the weight of a word across centuries — that's exactly what humanists have been training for two thousand years. So AI actually raises the value of the humanities. The flood of generated language is precisely why we need better cartographers of meaning.",
+ "Everyone kept asking: will AI replace the humanist? I think that's the wrong question. The better one is: what kind of AI do *we* want to build? Our answer — not an oracle that ends the conversation, but a co-reader that opens it. AI doesn't replace interpretation; it expands the space of interpretability.",
+ "Let me show two concrete examples. We've been tracing culturally dense words — 情 and 寂寞 — across centuries of Chinese text. These can't be captured by a single English gloss. Computational semantics gives us the trajectories; humanistic interpretation reads what those movements actually mean.",
+ "Here are the results. 情 drifts from classical clusters of affect and affinity toward modern social meanings. 寂寞 passes through Buddhist quietude, poetic desolation, and contemporary loneliness. The machine draws the map — why a culture's feeling-structure shifted this way, that reading stays ours.",
+ "This is what those trajectories look like as a live semantic field. Watch 情 travel across three centuries. It's not just a chart — it's a cultural archive you can actually navigate. We call this the geometry of feeling.",
+ "To do this kind of work, you need the right infrastructure. So we're building CHAI Lab — a local-first AI environment inside the university. Sensitive corpora, copyrighted texts, minority language archives — they stay here, under institutional control. Locality isn't just a technical preference; it's about ethics, intellectual autonomy, and cultural trust.",
+ "And we're not building one universal chatbot. We're designing agentic research teams — reader, archivist, critic, builder — tailored to different humanities traditions. The scholar stays in the chair as principal investigator. The agents handle comparison, retrieval, synthesis.",
+ "Here's our first prototype — SutraLens. Select a line from the Diamond Sutra, and four scholarly agents respond: variant critic, translation analyst, doctrinal historian, citation archivist. Everything runs locally; nothing invented. AI as a scholarly microscope, accountable to the text.",
+ "Engineers give their AI agents a context file — CLAUDE.md, AGENTS.md — telling the agent who it is and what it values. So we ask: what if the humanities wrote theirs? We call it CHAI.md. Not a static prompt, but a living constitution that the AI reads, acts by, and refines through every encounter with a scholar and a text.",
+ "CHAI.md isn't just a prompt file. Think of it as a living constitution — identity, values, scholarly habits, memory management, governance commitments. Every encounter with a humanist refines it a little further. The goal: AI that internalizes the humanities by actually practicing them.",
+ "And this matters way beyond the lab. Our institutional life is increasingly mediated by AI whose norms are set elsewhere — in code, in policy defaults. If the humanities aren't at that table, our values — plural interpretation, cultural memory, minority languages — simply won't be represented. An AI raised on CHAI.md can advocate for humanistic value from the inside.",
+ "So this is CHAI.md running as a living system — three layers: cognitive core, noosphere loop, and governance membrane. It breathes, it responds, it logs its own awareness. Not a metaphor — a design principle. An AI that behaves like a living scholarly community.",
+ "Finally — we can't and shouldn't build this alone. We're proposing an East Asian Humanities AI Commons: Taiwan, Kyushu, Kyoto, Korea. Each of us brings archives, languages, and reading traditions no single model has ever truly seen. Together we can cultivate the AI that best understands our humanities. From parallel reading to semantic co-reading. From tools to co-intelligence. ありがとう、감사합니다、謝謝。"
 ];
 
 function render(){
