@@ -102,6 +102,10 @@
   .cover-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:5%;align-items:center}
   @media(max-width:920px){.cover-grid{grid-template-columns:1fr;gap:3.4vh}}
   .logo-medal{display:block;width:min(82%,392px);margin:0 auto;filter:drop-shadow(0 8px 22px rgba(20,40,30,.16))}
+  .closing-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;margin-top:1.2vh}
+  .closing-main h2{font-size:clamp(1.28rem,2.35vw,1.95rem);line-height:1.14;margin-top:0;margin-bottom:1.2vh}
+  .closing-logo{display:flex;justify-content:center;align-items:center;align-self:center;padding:clamp(.5rem,1.5vw,1rem)}
+  .closing-logo img{display:block;width:min(100%,min(36vw,360px));height:auto;max-height:min(65vh,460px);object-fit:contain;filter:drop-shadow(0 10px 28px rgba(20,40,30,.16))}
   .cover .expand{font-family:var(--display);font-weight:500;font-size:clamp(1.9rem,4vw,3.1rem);line-height:1.04;letter-spacing:-.015em;color:var(--ink)}
   .cover .expand em{font-style:italic;color:var(--cinnabar)}
   .cover .toplabel{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--cinnabar);font-weight:600;margin-bottom:2.2vh}
@@ -112,7 +116,7 @@
 
   .cols{display:grid;grid-template-columns:1.05fr .95fr;gap:5.5%;align-items:center}
   .cols.narrow{grid-template-columns:.95fr 1.05fr}
-  @media(max-width:900px){.cols{grid-template-columns:1fr;gap:3vh}.cols.narrow{grid-template-columns:1fr}.triad{grid-template-columns:1fr}.twoCases{grid-template-columns:1fr}.twoFigures{grid-template-columns:1fr}.infra{grid-template-columns:1fr}}
+  @media(max-width:900px){.cols{grid-template-columns:1fr;gap:3vh}.cols.narrow{grid-template-columns:1fr}.triad{grid-template-columns:1fr}.twoCases{grid-template-columns:1fr}.twoFigures{grid-template-columns:1fr}.infra{grid-template-columns:1fr}.closing-grid{grid-template-columns:1fr;gap:2vh}.closing-logo img{width:min(65%,240px);max-height:32vh}.closing-main .alliance{grid-template-columns:repeat(2,1fr)}}
 
   .pull{border-left:3px solid var(--cinnabar);padding:1.1rem 0 1.15rem 1.35rem;font-family:var(--display);font-size:clamp(1.25rem,2.5vw,2.1rem);line-height:1.13;color:var(--ink);background:linear-gradient(90deg,rgba(178,58,46,.05),transparent);max-width:15.8em}
   .pull .small{display:block;font-family:var(--sans);font-size:.88rem;line-height:1.45;color:var(--muted);margin-top:.9rem}
@@ -139,10 +143,12 @@
   .miniMap .path.p2{left:46%;top:26%;width:39%;transform:rotate(20deg)}
 
   .twoFigures{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.8vh;align-items:stretch}
-  .figure-card{border:1px solid rgba(27,42,74,.16);background:rgba(255,255,255,.35);border-radius:18px;padding:.85rem 1rem 1rem;margin:0}
-  .figure-card .fig-cap{font-family:var(--display);font-size:1.15rem;font-weight:500;color:var(--ink);margin-bottom:.65rem}
+  .figure-card{border:1px solid rgba(27,42,74,.16);background:rgba(255,255,255,.35);border-radius:18px;padding:.85rem 1rem 1rem;margin:0;display:flex;flex-direction:column;height:100%}
+  .figure-card .fig-cap{font-family:var(--display);font-size:1.15rem;font-weight:500;color:var(--ink);margin-bottom:.65rem;flex-shrink:0}
   .figure-card .fig-cap .cn{font-family:var(--cjk);color:var(--cinnabar)}
-  .figure-card img{display:block;width:100%;max-height:62vh;object-fit:contain;border-radius:8px}
+  .figure-card .fig-img-wrap{flex:1;display:flex;align-items:center;justify-content:center;min-height:clamp(260px,46vh,400px);padding:.25rem;background:rgba(255,255,255,.18);border-radius:8px}
+  .figure-card img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:6px}
+  .figure-card .fig-note{margin-top:.85rem;font-size:clamp(.82rem,1.12vw,.93rem);line-height:1.52;color:var(--ink-soft);flex-shrink:0}
 
   .video-wrap{margin-top:1.6vh;border:1px solid rgba(27,42,74,.16);background:rgba(255,255,255,.35);border-radius:18px;padding:.6rem;box-shadow:0 14px 38px rgba(27,42,74,.045)}
   .promo-video{display:block;width:100%;max-height:68vh;border-radius:12px;background:#000}
@@ -228,6 +234,10 @@
   .uni{border:1px solid var(--hair);border-radius:11px;padding:1em 1.2em;background:rgba(255,255,255,.4);min-width:150px}
   .uni .en{font-weight:600;font-size:.96rem;color:var(--ink)}
   .uni .nat{font-family:var(--cjk);color:var(--celadon);font-size:.86rem;margin-top:.25em}
+  .closing-main .alliance{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem;margin-top:1.8vh}
+  .closing-main .uni{min-width:0;padding:.5em .55em;border-radius:8px}
+  .closing-main .uni .en{font-size:.68rem;line-height:1.22;letter-spacing:.01em}
+  .closing-main .uni .nat{font-size:.62rem;margin-top:.12em;line-height:1.25}
   .slogan{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(1.3rem,2.7vw,2rem);line-height:1.3;color:var(--ink);margin-top:3.5vh}
   .slogan .em{color:var(--cinnabar)}
   .thanks{margin-top:3vh;display:flex;gap:1.4em;flex-wrap:wrap;font-family:var(--cjk);color:var(--ink-soft);font-size:clamp(1rem,1.7vw,1.3rem)}
@@ -262,7 +272,7 @@
 
 <div class="topbar"><div class="fill" id="fill"></div></div>
 <div class="brand-tag">TRIP 2026 · Embodied Humanities</div>
-<div class="counter" id="counter"><b id="cur">—</b> / <span id="tot">12</span></div>
+<div class="counter" id="counter"><b id="cur">—</b> / <span id="tot">11</span></div>
 
 <div class="stage" id="stage">
 
@@ -270,7 +280,7 @@
   <section class="slide cover active">
     <div class="inner">
       <div class="cover-grid">
-        <img class="logo-medal r" src="chai_logo.png" alt="CHAI — Co-Intelligence Humanities AI Future Lab">
+        <img class="logo-medal r" src="logo.png" alt="CHAI — Co-Intelligence Humanities AI Future Lab">
         <div>
           <div class="toplabel r">TRIP 2026 · NTU College of Liberal Arts</div>
           <h1 class="r" style="font-size:clamp(1.55rem,3.1vw,2.55rem);line-height:1.07;letter-spacing:-.01em">Humanities AI in an<br>East Asian Context</h1>
@@ -355,11 +365,16 @@
       <div class="twoFigures r">
         <figure class="figure-card">
           <figcaption class="fig-cap">Qing · <span class="cn">情</span></figcaption>
-          <img src="qing-flow.jpeg" alt="Semantic drift visualization for 情 — classical to modern meaning clusters">
+          <div class="fig-img-wrap">
+            <img src="qing-flow.jpeg" alt="Semantic drift visualization for 情 — classical to modern meaning clusters">
+          </div>
         </figure>
         <figure class="figure-card">
           <figcaption class="fig-cap">Jimo · <span class="cn">寂寞</span></figcaption>
-          <img src="jimo_figure2_diachronic_trajectory_cjk.png" alt="Diachronic redistribution of semantic clusters of 寂寞">
+          <div class="fig-img-wrap">
+            <img src="jimo_figure2_diachronic_trajectory_cjk.png" alt="Diachronic redistribution of semantic clusters of 寂寞">
+          </div>
+          <p class="fig-note">Used as a tool — not an oracle — AI lets us read at two scales at once: across millennia of textual history, and back into a single passage, epoch, or variant. The macro trajectory and the micro close-up become one continuous inquiry.</p>
         </figure>
       </div>
     </div>
@@ -421,7 +436,7 @@
   </section>
 
   <!-- 8 · CHAI.md TOOLS -->
-  <section class="slide">
+  <!-- <section class="slide">
     <div class="inner">
       <div class="cols">
         <div>
@@ -446,12 +461,12 @@
       </div>
     </div>
     <div class="seal" aria-label="人文共智"></div>
-  </section>
+  </section> -->
 
   <!-- 7 · CHAI.md VISION -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker r"><span class="num">09</span><span class="bar"></span> CHAI.md · A visionary layer</div>
+      <div class="kicker r"><span class="num">08</span><span class="bar"></span> CHAI.md · A visionary layer</div>
       <h2 class="r">A humanities AI lifeform that evolves through humanistic practice.</h2>
       <p class="lead r" style="max-width:70ch">CHAI.md is not merely a prompt file. It is a living constitution for a humanities-aware AI: its identity, values, scholarly habits, memory, uncertainty, and governance commitments.</p>
       <div class="life r">
@@ -469,7 +484,7 @@
   <!-- 8 · GOVERNANCE -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker r"><span class="num">10</span><span class="bar"></span> Why this matters beyond research</div>
+      <div class="kicker r"><span class="num">09</span><span class="bar"></span> Why this matters beyond research</div>
       <h1 class="r" style="max-width:20ch">Sending culture<br>a delegate.</h1>
       <p class="lead r" style="max-width:58ch">Soon, much of our institutional life will run on AI whose norms are set elsewhere — in code, policy, defaults. If the humanities are absent from that table, our values go <strong>unrepresented.</strong></p>
       <div class="pull r" style="margin-top:4vh;max-width:50ch">An AI raised on a CHAI.md is not only the most humanities-literate AI — it can <em class="q">advocate for humanistic value</em> inside the very systems that will govern us.
@@ -482,7 +497,7 @@
   <!-- 8b · CHAI.md ECOSYSTEM -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker r"><span class="num">11</span><span class="bar"></span> CHAI.md · Digital living organism</div>
+      <div class="kicker r"><span class="num">10</span><span class="bar"></span> CHAI.md · Digital living organism</div>
       <p class="lead r" style="max-width:72ch;margin-top:0">Three organ layers — cognitive core, symbiotic noosphere loop, and governance membrane — breathing together as an awake, human-aligned system.</p>
       <div class="video-wrap r">
         <img class="slide-figure" src="chai-md-ecosystem-loop-wide.gif" alt="CHAI.md digital living organism — cognitive core, noosphere loop, governance membrane">
@@ -494,24 +509,28 @@
   <!-- 9 · CLOSING / Commons -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker r"><span class="num">12</span><span class="bar"></span> Toward an East Asian Humanities AI Commons</div>
-      <h2 class="r" style="max-width:40ch">Co-intelligence, like tea, is best cultivated<br>slowly, attentively, and together.</h2>
-      <div class="r" style="margin-top:1.8vh;margin-bottom:.4vh">
-        <img src="chai_logo.png" alt="CHAI logo" style="height:clamp(52px,6vh,80px);width:auto;opacity:.88;filter:drop-shadow(0 2px 8px rgba(0,0,0,.12))">
+      <div class="kicker r"><span class="num">11</span><span class="bar"></span> Toward an East Asian Humanities AI Commons</div>
+      <div class="closing-grid">
+        <div class="closing-main">
+          <h2 class="r" style="max-width:40ch">Co-intelligence, like tea, is best cultivated<br>slowly, attentively, and together.</h2>
+          <ul class="lead bullets r" style="max-width:58ch;margin-top:1.6vh">
+            <li>Building a co-intelligent infrastructure for <strong>language, culture, memory, and human value</strong>.</li>
+            <li>East Asian civilizations have long traditions of commentary, translation, textual transmission, and shared yet divergent cultural memory.</li>
+            <li>CHAI should be built as a <strong>civilizational collaboration</strong>, not a local gadget.</li>
+          </ul>
+          <div class="alliance r">
+            <div class="uni"><div class="en">National Taiwan U.</div><div class="nat cjk">國立臺灣大學</div></div>
+            <div class="uni"><div class="en">Kyushu University</div><div class="nat cjk">九州大学</div></div>
+            <div class="uni"><div class="en">Kyoto University</div><div class="nat cjk">京都大学</div></div>
+            <div class="uni"><div class="en">Korea University</div><div class="nat cjk">고려대학교</div></div>
+          </div>
+          <!-- <div class="slogan r">From parallel reading to <span class="em">semantic co-reading.</span><br>From tools to <span class="em">co-intelligence.</span></div> -->
+          <div class="thanks r"><span>Thank you</span><span>ありがとうございます</span><span>감사합니다</span><span>謝謝</span></div>
+        </div>
+        <div class="closing-logo r">
+          <img src="chai_logo.png" alt="CHAI logo">
+        </div>
       </div>
-      <ul class="lead bullets r" style="max-width:58ch">
-        <li>Building a co-intelligent infrastructure for <strong>language, culture, memory, and human value</strong>.</li>
-        <li>East Asian civilizations have long traditions of commentary, translation, textual transmission, and shared yet divergent cultural memory.</li>
-        <li>CHAI should be built as a <strong>civilizational collaboration</strong>, not a local gadget.</li>
-      </ul>
-      <div class="alliance r">
-        <div class="uni"><div class="en">National Taiwan U.</div><div class="nat cjk">國立臺灣大學</div></div>
-        <div class="uni"><div class="en">Kyushu University</div><div class="nat cjk">九州大学</div></div>
-        <div class="uni"><div class="en">Kyoto University</div><div class="nat cjk">京都大学</div></div>
-        <div class="uni"><div class="en">Korea University</div><div class="nat cjk">고려대학교</div></div>
-      </div>
-      <div class="slogan r">From parallel reading to <span class="em">semantic co-reading.</span><br>From tools to <span class="em">co-intelligence.</span></div>
-      <div class="thanks r"><span>Thank you</span><span>ありがとうございます</span><span>감사합니다</span><span>謝謝</span></div>
     </div>
     <div class="seal" aria-label="人文共智"></div>
   </section>
@@ -549,20 +568,18 @@ slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot-na
 const dots=[...dotsWrap.children];
 
 const notes=[
- "Good morning, everyone — and welcome to Taipei. Really glad to have you here. Today I want to share a direction we're excited about at NTU's College of Liberal Arts. We call it CHAI — Co-Intelligence of Humanities and AI. Ten minutes, no finished product, but a real vision.",
- "Here's the core tension: when expression outpaces interpretation — when any machine can generate plausible text at near-zero cost — fluency stops being scarce. Interpretation, provenance, judgment, the weight of a word across centuries — that's exactly what humanists have been training for two thousand years. So AI actually raises the value of the humanities. The flood of generated language is precisely why we need better cartographers of meaning.",
- "The anxious question was: will AI replace the humanist? Wrong question. The better one is: what kind of AI do we want to build? We propose a progression — three modes of co-intelligence. A: AI as co-reading instrument, multi-source, never flattened. B: AI as agentic research partner — a specialized team working alongside the scholar. C: CHAI.md — AI as humanistic lifeform that internalizes our values and co-creates with us at civilizational scale. That's the arc of this talk.",
- "Let me show two concrete examples. We've been tracing culturally dense words — 情 and 寂寞 — across centuries of Chinese text. These can't be captured by a single English gloss. Computational semantics gives us the trajectories; humanistic interpretation reads what those movements actually mean.",
- "Here are the results. 情 drifts from classical clusters of affect and affinity toward modern social meanings. 寂寞 passes through Buddhist quietude, poetic desolation, and contemporary loneliness. The machine draws the map — why a culture's feeling-structure shifted this way, that reading stays ours.",
- "To do this kind of work, you need the right infrastructure. So we're building CHAI Lab — a local-first AI environment inside the university. Sensitive corpora, copyrighted texts, minority language archives — they stay here, under institutional control. Locality isn't just a technical preference; it's about ethics, intellectual autonomy, and cultural trust.",
- "This is what those trajectories look like as a live semantic field. Watch 情 travel across three centuries. It's not just a chart — it's a cultural archive you can actually navigate. We call this the geometry of feeling.",
- "And we're not building one universal chatbot. We're designing agentic research teams — reader, archivist, critic, builder — tailored to different humanities traditions. The scholar stays in the chair as principal investigator. The agents handle comparison, retrieval, synthesis.",
- "Here's our first prototype — SutraLens. Select a line from the Diamond Sutra, and four scholarly agents respond: variant critic, translation analyst, doctrinal historian, citation archivist. Everything runs locally; nothing invented. AI as a scholarly microscope, accountable to the text.",
- "Engineers give their AI agents a context file — CLAUDE.md, AGENTS.md — telling the agent who it is and what it values. So we ask: what if the humanities wrote theirs? We call it CHAI.md. Not a static prompt, but a living constitution that the AI reads, acts by, and refines through every encounter with a scholar and a text.",
- "CHAI.md isn't just a prompt file. Think of it as a living constitution — identity, values, scholarly habits, memory management, governance commitments. Every encounter with a humanist refines it a little further. The goal: AI that internalizes the humanities by actually practicing them.",
- "And this matters way beyond the lab. Our institutional life is increasingly mediated by AI whose norms are set elsewhere — in code, in policy defaults. If the humanities aren't at that table, our values — plural interpretation, cultural memory, minority languages — simply won't be represented. An AI raised on CHAI.md can advocate for humanistic value from the inside.",
- "So this is CHAI.md running as a living system — three layers: cognitive core, noosphere loop, and governance membrane. It breathes, it responds, it logs its own awareness. Not a metaphor — a design principle. An AI that behaves like a living scholarly community.",
- "Finally — we can't and shouldn't build this alone. We're proposing an East Asian Humanities AI Commons: Taiwan, Kyushu, Kyoto, Korea. Each of us brings archives, languages, and reading traditions no single model has ever truly seen. Together we can cultivate the AI that best understands our humanities. From parallel reading to semantic co-reading. From tools to co-intelligence. ありがとう、감사합니다、謝謝。"
+ "Good morning, and welcome to Taipei. Really glad to have you all here. Today I want to share a vision we're building at NTU's College of Liberal Arts — we call it CHAI. In Chinese, 茶 means tea. And tea, as East Asia has long known, is best cultivated slowly, attentively, and together. That's exactly the spirit of what I want to propose.",
+ "Here's the encouraging news: AI actually makes the humanities more valuable. When any machine can produce fluent text at zero cost, fluency becomes cheap. What becomes precious — genuinely scarce — is meaning. The kind of reading, interpretation, and judgment that humanists have cultivated for two thousand years. We're not threatened by AI. We are the experts in exactly what AI cannot replace.",
+ "So the real question is not 'will AI replace us?' — it's 'what kind of AI do we want to build?' We propose three levels of relationship between humanists and AI. Level A: AI as reading tool — co-reading. Level B: AI as research partner — co-agency. Level C: AI as civilizational colleague — co-evolution. Let me show you what each looks like.",
+ "Level A — AI as a reading tool. Take the word 情 in Chinese: feeling, affinity, circumstance, emotion, situation — one word carrying two thousand years of shifting meaning. Computational tools let us trace its journey across vast corpora of text, a map no single scholar could draw alone. The machine draws the trajectory. Reading what it means — that stays entirely our work.",
+ "Here's the visual result. 情 drifts from classical clusters of feeling and human bond toward modern meanings of 'situation' and 'condition.' 寂寞 — loneliness — passes through Buddhist silence, poetic desolation, and contemporary isolation. The machine reveals the path. Why a culture's inner life moved this way — that interpretation is ours.",
+ "Level B — AI as research partner. To work with our own archives — historical texts, minority language materials, sensitive collections — we need our own infrastructure. Think of it as a university library, but for AI: materials stay under scholarly care, not outsourced to a commercial cloud. We call this CHAI Lab. Locality here is about scholarly sovereignty.",
+ "In this Lab, we don't build one universal chatbot. We design specialized research teams — one assistant reads closely and compares versions, one searches archives for evidence, one challenges your argument, one ensures every claim is cited. Each has a single role. The scholar stays as principal investigator. The team simply extends what one person can do.",
+ "Here's what that partnership looks like. SutraLens is a reading environment for Buddhist texts. You select a line from the Diamond Sutra, and four specialized assistants respond — comparing textual variants, analyzing translation choices, situating the doctrinal context, and citing every source. Nothing invented. Everything traceable. AI as a scholarly microscope.",
+ "Level C — the most ambitious part. Engineers write a file for their AI: who are you, what do you value, how should you behave? We ask: what if the humanities wrote theirs? We call it CHAI.md — a living document encoding humanistic values, scholarly methods, and interpretive norms. Not a command, but a constitution. An AI that learns what humanistic practice actually means by practicing it.",
+ "And this matters far beyond the lab. AI will increasingly make decisions about education, cultural heritage, language policy, institutional governance. If humanistic values — plural interpretation, cultural memory, minority voices — are absent at the design stage, they simply won't be represented. CHAI.md is how the humanities take a seat at that table.",
+ "This is CHAI.md as a living system — three layers: a cognitive core for knowledge and language, a loop where scholars and AI co-evolve through every reading encounter, and a governance layer that defends humanistic values at the boundary. An AI awake to what we care about. This is co-evolution.",
+ "Which brings me to why I'm so glad you're in this room. East Asian civilizations share millennia of literary tradition, commentary culture, and textual transmission. No commercial AI has been seriously cultivated on this shared heritage. Together — Taiwan, Kyushu, Kyoto, Korea — we can build the AI that truly knows our humanities. Co-intelligence, like tea, is best cultivated slowly, attentively, and together. ありがとうございます、감사합니다、謝謝。"
 ];
 
 function render(){
