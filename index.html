@@ -101,22 +101,44 @@
   .cover .inner{max-width:1240px}
   .cover-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:5%;align-items:center}
   @media(max-width:920px){.cover-grid{grid-template-columns:1fr;gap:3.4vh}}
+  .cover-logo-stack{text-align:center}
   .logo-medal{display:block;width:min(82%,392px);margin:0 auto;filter:drop-shadow(0 8px 22px rgba(20,40,30,.16))}
+  .agent-diagram{margin-top:.8vh}
+  .agent-diagram img{display:block;width:100%;max-height:52vh;object-fit:contain;border-radius:10px;filter:drop-shadow(0 6px 18px rgba(20,40,30,.1))}
+  .agent-slide .kicker{margin-bottom:1vh}
+  .agent-layout{display:grid;grid-template-columns:1.38fr .62fr;gap:clamp(.8rem,2.2vw,1.8rem);align-items:center}
+  .agent-hero{display:flex;align-items:center;justify-content:center;padding:.25rem;border:1px solid rgba(27,42,74,.14);background:rgba(255,255,255,.32);border-radius:20px;box-shadow:0 14px 38px rgba(27,42,74,.045)}
+  .agent-hero img{display:block;width:100%;max-height:min(84vh,720px);object-fit:contain;border-radius:14px}
+  .agent-aside{display:flex;flex-direction:column;gap:.7rem;max-width:30ch}
+  .agent-lead{font-size:clamp(.8rem,1.02vw,.88rem);line-height:1.5;color:var(--ink-soft);margin:0}
+  .agent-cards{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+  .agent-cards .card{padding:.6rem .7rem;border-radius:12px}
+  .agent-cards .card .idx{font-size:1.05rem}
+  .agent-cards .card .ttl{font-size:.78rem;margin:.2rem 0 .15rem}
+  .agent-cards .card p{font-size:.68rem;line-height:1.36}
+  .agent-pull{border-left:2px solid var(--cinnabar);padding:.5rem 0 .5rem .8rem;font-family:var(--display);font-size:clamp(.92rem,1.25vw,1.08rem);line-height:1.22;color:var(--ink);background:linear-gradient(90deg,rgba(178,58,46,.05),transparent)}
   .closing-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;margin-top:1.2vh}
   .closing-main h2{font-size:clamp(1.28rem,2.35vw,1.95rem);line-height:1.14;margin-top:0;margin-bottom:1.2vh}
-  .closing-logo{display:flex;justify-content:center;align-items:center;align-self:center;padding:clamp(.5rem,1.5vw,1rem)}
-  .closing-logo img{display:block;width:min(100%,min(36vw,360px));height:auto;max-height:min(65vh,460px);object-fit:contain;filter:drop-shadow(0 10px 28px rgba(20,40,30,.16))}
+  .closing-logo{display:flex;flex-direction:column;justify-content:center;align-items:center;align-self:center;gap:clamp(.6rem,1.2vh,.9rem);padding:clamp(.5rem,1.5vw,1rem)}
+  .closing-qr{display:flex;flex-direction:column;align-items:center;gap:.35rem}
+  .closing-qr img{display:block;width:clamp(88px,10vw,120px);height:auto;border-radius:6px;background:#fff;padding:4px;box-shadow:0 2px 10px rgba(20,40,30,.08)}
+  .closing-qr-label{font-size:clamp(.62rem,.85vw,.72rem);letter-spacing:.06em;color:var(--ink-soft);text-align:center;line-height:1.35}
+  .closing-logo > img{display:block;width:min(100%,min(36vw,360px));height:auto;max-height:min(65vh,460px);object-fit:contain;filter:drop-shadow(0 10px 28px rgba(20,40,30,.16))}
   .cover .expand{font-family:var(--display);font-weight:500;font-size:clamp(1.9rem,4vw,3.1rem);line-height:1.04;letter-spacing:-.015em;color:var(--ink)}
   .cover .expand em{font-style:italic;color:var(--cinnabar)}
   .cover .toplabel{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--cinnabar);font-weight:600;margin-bottom:2.2vh}
   .cover .sub{font-size:clamp(.92rem,1.4vw,1.12rem);color:var(--ink-soft);font-weight:300;margin-top:2.6vh;line-height:1.6;max-width:46ch}
   .cover .greet{font-family:var(--cjk);font-weight:400;color:var(--celadon);margin-top:2.2vh;font-size:clamp(.95rem,1.5vw,1.15rem);letter-spacing:.04em}
-  .cover .meta{margin-top:3.6vh;display:flex;gap:1.4em;flex-wrap:wrap;align-items:center;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-  .cover .meta .dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  .cover .meta{margin-top:3.6vh;display:flex;flex-direction:column;align-items:flex-start;gap:.45em;font-size:clamp(.72rem,1.05vw,.82rem);letter-spacing:.06em;text-transform:none;color:var(--muted);line-height:1.5;max-width:52ch}
+  .cover .meta .meta-name{font-size:clamp(.76rem,1.1vw,.86rem);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .cover .meta .meta-name strong{color:var(--ink);font-weight:600}
+  .cover .meta .meta-affil{color:var(--ink-soft);font-weight:400}
+  .cover .meta .meta-chai{color:var(--cinnabar);font-weight:600}
+  .cover .meta .dot{display:none}
 
   .cols{display:grid;grid-template-columns:1.05fr .95fr;gap:5.5%;align-items:center}
   .cols.narrow{grid-template-columns:.95fr 1.05fr}
-  @media(max-width:900px){.cols{grid-template-columns:1fr;gap:3vh}.cols.narrow{grid-template-columns:1fr}.triad{grid-template-columns:1fr}.twoCases{grid-template-columns:1fr}.twoFigures{grid-template-columns:1fr}.infra{grid-template-columns:1fr}.closing-grid{grid-template-columns:1fr;gap:2vh}.closing-logo img{width:min(65%,240px);max-height:32vh}.closing-main .alliance{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:900px){.cols{grid-template-columns:1fr;gap:3vh}.cols.narrow{grid-template-columns:1fr}.triad{grid-template-columns:1fr}.twoCases{grid-template-columns:1fr}.twoFigures{grid-template-columns:1fr}.infra{grid-template-columns:1fr}.agent-layout{grid-template-columns:1fr;gap:2vh}.agent-hero img{max-height:52vh}.agent-aside{max-width:none}.closing-grid{grid-template-columns:1fr;gap:2vh}.closing-logo > img{width:min(65%,240px);max-height:32vh}.closing-qr img{width:clamp(72px,22vw,100px)}.closing-main .alliance{grid-template-columns:repeat(2,1fr)}}
 
   .pull{border-left:3px solid var(--cinnabar);padding:1.1rem 0 1.15rem 1.35rem;font-family:var(--display);font-size:clamp(1.25rem,2.5vw,2.1rem);line-height:1.13;color:var(--ink);background:linear-gradient(90deg,rgba(178,58,46,.05),transparent);max-width:15.8em}
   .pull .small{display:block;font-family:var(--sans);font-size:.88rem;line-height:1.45;color:var(--muted);margin-top:.9rem}
@@ -280,17 +302,22 @@
   <section class="slide cover active">
     <div class="inner">
       <div class="cover-grid">
-        <img class="logo-medal r" src="logo.png" alt="CHAI — Co-Intelligence Humanities AI Future Lab">
+        <div class="cover-logo-stack">
+          <img class="logo-medal r" src="logo.png" alt="CHAI — Co-Intelligence of Humanities &amp; AI Future Lab">
+        </div>
         <div>
           <div class="toplabel r">TRIP 2026 · NTU College of Liberal Arts</div>
           <h1 class="r" style="font-size:clamp(1.55rem,3.1vw,2.55rem);line-height:1.07;letter-spacing:-.01em">Humanities AI in an<br>East Asian Context</h1>
           <div class="r" style="font-family:var(--display);font-size:clamp(.98rem,1.6vw,1.3rem);color:var(--ink-soft);font-weight:400;margin-top:1.4vh;line-height:1.3">Language, Culture &amp; Computational Practice</div>
           <div class="r" style="margin-top:2.6vh;display:flex;align-items:center;gap:.8em">
             <span style="height:1px;width:34px;background:var(--cinnabar);display:inline-block"></span>
-            <span style="font-family:var(--display);font-style:italic;font-size:clamp(.98rem,1.6vw,1.28rem);color:var(--ink)">Co-Intelligence of Humanities &amp; AI<em style="color:var(--cinnabar)"> (CHAI)</em></span>
+            <!-- <span style="font-family:var(--display);font-style:italic;font-size:clamp(.98rem,1.6vw,1.28rem);color:var(--ink)">Co-Intelligence of Humanities &amp; AI<em style="color:var(--cinnabar)"> (CHAI)</em></span> -->
           </div>
           <div class="greet cjk r">九州大学・京都大学・고려대학교 — ようこそ、환영합니다、歡迎。</div>
-          <div class="meta r"><span><strong>Shu-Kai Hsieh</strong></span><span class="dot"></span><span>Graduate Institute of Linguistics, National Taiwan University</span></div>
+          <div class="meta r">
+            <span class="meta-name"><strong>Shu-Kai Hsieh</strong></span>
+            <span class="meta-affil">Graduate Institute of Linguistics/<span class="meta-chai">Co-Intelligence of Humanities &amp; AI (CHAI)</span> Future lab, National Taiwan University</span>
+          </div>
         </div>
       </div>
     </div>
@@ -405,20 +432,22 @@
 
   <!-- B · AGENTIC TEAMS -->
   <section class="slide">
-    <div class="inner cols narrow">
-      <div>
-        <div class="kicker r"><span class="num">06</span><span class="bar"></span> 【B. Co-agency】 Agentic research teams</div>
-        <h2 class="r">Tailored research flows for different humanities fields.</h2>
-        <p class="lead r">We are not building one universal chatbot. We are designing <strong>dynamic agentic teams</strong> for different research traditions: textual criticism, historical inference, conceptual analysis, translation, pedagogy, and public communication.</p>
-      </div>
-      <div class="r">
-        <div class="triad" style="margin-top:0;grid-template-columns:1fr 1fr">
-          <div class="card"><div class="idx">1</div><div class="ttl">Reader agent</div><p>Close reading, summary, comparison, and question generation.</p></div>
-          <div class="card"><div class="idx">2</div><div class="ttl">Archivist agent</div><p>Source tracking, citation checking, metadata, and provenance.</p></div>
-          <div class="card"><div class="idx">3</div><div class="ttl">Critic agent</div><p>Challenges assumptions, detects anachronism, and flags overclaims.</p></div>
-          <div class="card"><div class="idx">4</div><div class="ttl">Builder agent</div><p>Turns scholarly workflow into tools, datasets, visualizations, and teaching materials.</p></div>
+    <div class="inner agent-slide">
+      <div class="kicker r"><span class="num">06</span><span class="bar"></span> 【B. Co-agency】 Agentic research teams</div>
+      <div class="agent-layout">
+        <div class="agent-hero r">
+          <img src="chai_agents.gif" alt="CHAI Agentic Research Team — Reader, Archivist, Critic, and Builder agents collaborate on each research query">
         </div>
-        <div class="pull" style="margin-top:1.2rem;max-width:100%;font-size:1.6rem">The scholar remains the principal investigator; agents become a disciplined research team.</div>
+        <div class="agent-aside r">
+          <p class="agent-lead">Not one universal chatbot — a <strong>dynamic agentic team</strong> tailored to textual criticism, historical inference, translation, pedagogy, and public communication.</p>
+          <div class="agent-cards">
+            <div class="card"><div class="idx">1</div><div class="ttl">Reader</div><p>Close reading, comparison, question generation.</p></div>
+            <div class="card"><div class="idx">2</div><div class="ttl">Archivist</div><p>Source tracking, citations, provenance.</p></div>
+            <div class="card"><div class="idx">3</div><div class="ttl">Critic</div><p>Challenge assumptions; flag overclaims.</p></div>
+            <div class="card"><div class="idx">4</div><div class="ttl">Builder</div><p>Tools, datasets, visualizations, teaching.</p></div>
+          </div>
+          <div class="agent-pull">The scholar remains the principal investigator; agents become a disciplined research team.</div>
+        </div>
       </div>
     </div>
     <div class="seal" aria-label="人文共智"></div>
@@ -528,6 +557,10 @@
           <div class="thanks r"><span>Thank you</span><span>ありがとうございます</span><span>감사합니다</span><span>謝謝</span></div>
         </div>
         <div class="closing-logo r">
+          <div class="closing-qr">
+            <img src="chai-website-qr.png" alt="QR code — TRIP 2026 slides online">
+            <p class="closing-qr-label">ntu-chai.github.io/</p>
+          </div>
           <img src="chai_logo.png" alt="CHAI logo">
         </div>
       </div>
