@@ -1,46 +1,6 @@
-Good morning everyone.
-
-My name is Shu-Kai Hsieh from National Taiwan University.
-I have spent most of my academic life between two rather different worlds.
-One is the world of linguistics and the humanities.
-The other is the world of artificial intelligence and computational modeling.
-In a sense, I have always been half trained in the humanities and half trained in technology.
-
-
-Because of this dual perspective, I have witnessed two things simultaneously.
-On the one hand, AI is rapidly transforming the way we produce, access, and evaluate knowledge.
-On the other hand, many of the questions raised by AI are no longer purely technical.
-They are fundamentally humanistic questions about language, culture, interpretation, memory, and meaning.
-
-This is why I believe the future relationship between AI and the humanities should not be framed as a story of replacement. Instead, it is a story of co-intelligence.
-
-接著就可以切到你的 CHAI。
-
----
-
-
-
-
-
-
-
-
-> AI brings us back to a very old humanistic question:
->
-> What does it mean to understand?
-
-這句其實可以當第一分鐘的靈魂。之後你講「情」、講「寂寞」、講佛典對讀、講 Co-reading，都會自然串起來。
-
----
-
-第一個問題：「AI 到底改變了什麼？」
-
-
---------
-
 # S1
 
-Good morning everyone. My name is Shu-Kai Hsieh from National Taiwan University.
+Good morning everyone. I hope everyone slept well last night. My name is Shu-Kai Hsieh from National Taiwan University.
 
 When I first entered computational linguistics more than thirty years ago, many people saw technology and the humanities as separate worlds.
 
@@ -50,19 +10,14 @@ AI systems can now read texts, generate arguments, summarize archives, and even 
 As someone working between AI and the humanities, I find myself asking a simple question:
 If machines are beginning to participate in activities that were once considered uniquely humanistic, what should the role of the humanities be in the age of AI?
 
-然後：
-
 My answer is not that the humanities should adapt to AI.
 Rather, the humanities should help shape AI itself.
-
-這一句很適合作為整場演講的主軸。
-之後你就能自然接：
 
 In the next few minutes,, I would like to briefly share how we are exploring this question through the Humanities AI Co-Intelligence Lab, or CHAI, at NTU.
 
 ---
 
-# Slide 2Why the Humanities Matter More
+# Slide 2 Why the Humanities Matter More
 
 Many people assume that AI reduces the importance of the humanities.
 I would argue the opposite.
@@ -77,22 +32,16 @@ How do we connect a word to its historical and cultural context?
 
 These have always been humanistic questions.
 The more powerful AI becomes, the more important these questions become.
-
-Pause.
-
 In short, AI creates an abundance of expression, but the humanities help us navigate meaning.
 
 ---
-Slide 3
-A Shift of Question
-
+# Slide 3：A Shift of Question
 
 For the past few years, much public discussion has focused on one question:
 "Will AI replace us?"
 
 I think this is the wrong question. The more important question is:
 "What kind of AI do we want to build?"
-
 AI should not be viewed as an oracle that ends interpretation.
 Instead, it can become a partner that expands interpretation.
 
@@ -106,7 +55,7 @@ Today I will briefly illustrate this through three examples.
 
 
 ---
-Slide 4 Co-reading: Cultural Semantics Across Centuries
+# Slide 4 Co-reading: Cultural Semantics Across Centuries
 
 The first mode is co-reading.
 
@@ -122,7 +71,7 @@ Importantly, AI is not replacing interpretation.
 It is helping us discover patterns that invite further interpretation.
 
 ---
-Slide 5: Semantic Trajectories
+# Slide 5: Semantic Trajectories
 
 Here we show examples such as 情 and 寂寞.
 
@@ -139,12 +88,11 @@ Neither works effectively alone.
 
 
 ---
-Slide 6: CHAI Local Infrastructure
+# Slide 6: CHAI Local Infrastructure
 
 The second mode is co-agency.
 
 To support humanities research, we realized that infrastructure matters.
-
 Many humanities collections involve sensitive materials, copyright concerns, institutional archives, or culturally specific resources.
 
 For us, locality is not merely a technical issue.
@@ -155,7 +103,7 @@ Our goal is to create a secure research space where scholars can work with AI wi
 
 
 ---
-> Slide 7: Agentic Research Teams
+# Slide 7: Agentic Research Teams
 
 Another misconception is that AI means a single chatbot.
 
@@ -176,7 +124,7 @@ In this sense, we are modeling AI not after a tool, but after a scholarly ecosys
 
 
 ---
-> Slide 8: SutraLens
+# Slide 8: SutraLens
 
 This is a prototype we call SutraLens.
 
@@ -190,8 +138,7 @@ We are trying to amplify scholarly attention rather than replace scholarly judgm
 For humanities researchers, this distinction is crucial.
 
 ---
-
-> Slide 9: CHAI.md
+# Slide 9: CHAI.md
 
 The third mode is perhaps the most speculative.
 
@@ -209,13 +156,12 @@ CHAI.md is our attempt to think about AI not only as computation, but also as cu
 
 
 ---
-> Slide 10: Why This Matters Beyond Research
+# Slide 10: Why This Matters Beyond Research
 
 
 This discussion extends beyond universities.
 
 Increasingly, AI systems participate in education, communication, governance, and public discourse.
-
 The values embedded in those systems matter.
 
 If East Asian languages, traditions, and intellectual perspectives are absent from their (English-centered) development, then our cultures become consumers rather than contributors.
@@ -227,7 +173,7 @@ The question is whether those delegates carry our histories and values with them
 
 
 ---
-> Slide 11: Digital Living Organism
+# Slide 11: Digital Living Organism
 
 
 This slide illustrates a long-term vision.
@@ -246,12 +192,11 @@ But it helps us ask new questions about the future relationship between humans a
 
 
 ---
-> Slide 12: East Asian Humanities AI Commons
+# Slide 12: East Asian Humanities AI Commons
 
 Let me conclude with one final thought.
 
 Co-intelligence, like tea, is best cultivated slowly, attentively, and together.
-
 
 East Asia possesses some of the world's richest traditions of textual scholarship, commentary, translation, and cultural memory.
 
